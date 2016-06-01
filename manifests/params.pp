@@ -49,9 +49,9 @@ class mongodb::params inherits mongodb::globals {
             $package_ensure_client = $version
             $package_ensure_mongos = $version
           } else {
-            $server_package_name   = pick($::mongodb::globals::server_package_name, 'mongodb-10gen')
-            $client_package_name   = pick($::mongodb::globals::client_package_name, 'mongodb-10gen')
-            $mongos_package_name   = pick($::mongodb::globals::mongos_package_name, 'mongodb-10gen')
+            $server_package_name   = pick($::mongodb::globals::server_package_name, 'mongo-10gen-server')
+            $client_package_name   = pick($::mongodb::globals::client_package_name, 'mongo-10gen')
+            $mongos_package_name   = pick($::mongodb::globals::mongos_package_name, 'mongo-10gen-unstable-mongos')
             $package_ensure        = $version
             $package_ensure_client = $version #this is still needed in case they are only installing the client
             $package_ensure_mongos = $version
