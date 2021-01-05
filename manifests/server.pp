@@ -81,6 +81,7 @@ class mongodb::server (
                       'clusterAdmin', 'clusterManager', 'clusterMonitor',
                       'hostManager', 'root', 'restore'],
 
+  $config_data     = undef,
   # Deprecated parameters
   $master          = undef,
   $slave           = undef,
